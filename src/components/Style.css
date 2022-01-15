@@ -1,0 +1,131 @@
+/* ALL  */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+/* PAGE BACKGROUND  */
+.body {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+    90deg,
+    rgb(190, 190, 190) 0%,
+    rgb(148, 146, 146) 100%
+  );
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  flex-direction: column;
+  width: 520px;
+  min-height: 600px;
+  background: linear-gradient(
+    90deg,
+    rgb(92, 92, 92) 0%,
+    rgb(192, 179, 200) 100%
+  );
+  text-align: center;
+  margin: 128px auto;
+  border-radius: 10px;
+  box-shadow: 0 0px 75px rgb(65, 65, 65);
+}
+.container h1 {
+  margin-bottom: 10px;
+  color: white;
+}
+.header__form {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.header__form input {
+  font-size: 25px;
+  width: 300px;
+  text-align: center;
+}
+.btn {
+  width: 50px;
+  height: 50px;
+  color: white;
+  cursor: pointer;
+}
+.todos__form {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  /* border: 2px solid black; */
+  height: 400px;
+  overflow-y: auto;
+}
+li {
+  /* border: 2px solid black; */
+  list-style: none;
+  width: 430px;
+  cursor: pointer;
+  margin-bottom: 5px;
+  font-size: 1.7em;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin: 4px auto;
+  color: #fff;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 118, 20, 1) 0%,
+    rgba(255, 84, 17, 1) 100%
+  );
+  padding: 16px;
+  border-radius: 5px;
+}
+li:hover {
+  box-shadow: 0 0px 32px rgb(255, 0, 0);
+  transition: 0.3s all ease-in-out;
+}
+li:nth-child(4n + 1) {
+  background: linear-gradient(
+    90deg,
+    rgba(93, 12, 255, 1) 0%,
+    rgba(155, 0, 250, 1) 100%
+  );
+}
+li:nth-child(4n + 2) {
+  background: linear-gradient(
+    90deg,
+    rgb(235, 35, 225) 0%,
+    rgba(250, 0, 135, 1) 100%
+  );
+}
+li:nth-child(4n + 3) {
+  background: linear-gradient(
+    90deg,
+    rgba(20, 159, 255, 1) 0%,
+    rgba(17, 122, 255, 1) 100%
+  );
+}
+.li__btn {
+  display: flex;
+  width: 400px;
+  justify-content: flex-end;
+  align-items: center;
+}
+.li__btn .edit {
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+.li__btn .trash {
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
